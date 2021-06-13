@@ -35,4 +35,4 @@ const PassPossibility = (range1, range2) => {
     return correctPassAmount
 }
 
-console.log(PassPossibility(153517,630395))
+console.log(PassPossibility(153517, 630395))

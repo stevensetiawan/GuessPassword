@@ -30,9 +30,9 @@ const PassPossibility = (range1, range2) => {
         if(adjacent_digit==true){
             correctPassAmount += 1
         }
-        console.log(password, correctPassAmount, " this is password & correct pass amount ")
+        // console.log(password, correctPassAmount, " this is password & correct pass amount ")
     }
     return correctPassAmount
 }
 
-console.log(PassPossibility(153517,630395))
+console.log(PassPossibility(153517, 630395))
