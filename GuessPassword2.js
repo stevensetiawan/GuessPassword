@@ -1,11 +1,11 @@
-function PassPossibility(){
+const PassPossibility = (range1, range2) => {
     let password = ''
     let passlength = 0
     let zeroDigit = ''
     let correctPassAmount = 0
     let adjacent_digit = false
 
-   loopCounter: for(counter=153517; counter <=630395; counter+=1){
+   loopCounter: for(counter=range1; counter <=range2; counter+=1){
        password = counter.toString();
        passlength = password.length
        adjacent_digit=false
@@ -16,7 +16,9 @@ function PassPossibility(){
         }  
             password = zeroDigit + password
       }
-      passlength = password.length
+      
+        passlength = password.length
+        
         for(i=0; i<passlength-1; i++){
             if(password[i] > password[i+1]){
                 continue loopCounter
@@ -28,9 +30,9 @@ function PassPossibility(){
         if(adjacent_digit==true){
             correctPassAmount += 1
         }
-        console.log(password, correctPassAmount, " ini password & correct pass amount ")
+        console.log(password, correctPassAmount, " this is password & correct pass amount ")
     }
     return correctPassAmount
 }
 
-console.log(PassPossibility())
+console.log(PassPossibility(153517,630395))
