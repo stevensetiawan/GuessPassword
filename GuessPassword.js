@@ -5,7 +5,7 @@ const PassPossibility = (range1, range2) => {
     let correctPassAmount = 0
     let adjacent_digit = false
 
-   loopCounter: for(counter=153517; counter <=630395; counter+=1){
+   loopCounter: for(counter=range1; counter <=range2; counter+=1){
        password= counter.toString();
        passlength= password.length
        adjacent_digit= false
